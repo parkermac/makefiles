@@ -142,6 +142,16 @@ MY_CPP_FLAGS ?=
         FORT ?= ifort
 
 #--------------------------------------------------------------------------
+#  MacCready additon: FORTM is used to refer to a machine-specific
+#  compiler file to include.  This is then referred to only in the line
+#  include $(COMPILERS)/$(OS)-$(strip $(FORTM)).mk (around line 345).
+#  The idea is that we can then add each machine's compiler file with
+#  a unique, new, name, instead of just recycling Linux-ifort.mk.
+#--------------------------------------------------------------------------
+
+        FORTM ?= ifort_gaggle
+
+#--------------------------------------------------------------------------
 #  Set directory for executable.
 #--------------------------------------------------------------------------
 
@@ -335,7 +345,7 @@ ifndef FORT
 endif
 
 ifneq "$(MAKECMDGOALS)" "clean"
-  include $(COMPILERS)/$(OS)-$(strip $(FORT)).mk
+  include $(COMPILERS)/$(OS)-$(strip $(FORTM)).mk
 endif
 
 ifdef USE_MPI
