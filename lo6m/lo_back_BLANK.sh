@@ -5,7 +5,8 @@
 
 ## Resources
 ## Nodes
-#SBATCH --nodes=7
+##SBATCH --nodes=7
+#SBATCH --nodes=14
 ## Tasks per node (Slurm assumes you want to run 28 tasks per node unless explicitly told otherwise)
 #SBATCH --ntasks-per-node=28
 
