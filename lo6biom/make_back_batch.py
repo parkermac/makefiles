@@ -13,19 +13,14 @@ parser = argparse.ArgumentParser()
 # positional arguments
 parser.add_argument("exe_path", type=str, help="output path to dot.in file")
 
-#parser.add_argument("gridname", type=str, help="cascadia1, etc.")
-#parser.add_argument("tag", type=str, help="base, etc.")
-#parser.add_argument("date_string", type=str, help="e.g. 2014.02.14")
-# and this is an optional input parameter
-#parser.add_argument("-x", "--ex_name", type=str, help="e.g. lo1")
-
 args = parser.parse_args()
 
 # setup
 import os; import sys
 
 EXE_PATH = args.exe_path
-print(' \nCreates batch script for LiveOcean forecast run for ' + EXE_PATH + ' \n')
+print('Creating batch script for LiveOcean forecast run for:')
+print(EXE_PATH)
 
 ## create lo_batch.sh - batch job script  ##########################
 
