@@ -11,23 +11,25 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # positional arguments
-parser.add_argument("exe_path", type=str, help="output path to dot.in file")
+parser.add_argument('-xp', '--exe_path', type=str, help="output path to dot.in file")
+parser.add_argument('-npn', '--np_num', type=int, help="number of cores to use")
 
 args = parser.parse_args()
-
-# setup
-import os; import sys
 
 EXE_PATH = args.exe_path
 print('Creating batch script for LiveOcean forecast run for:')
 print(EXE_PATH)
+
+NP_NUM = args.np_num
+
+N_NODES = int(NP_NUM /28)
 
 ## create lo_batch.sh - batch job script  ##########################
 
 f  = open('lo_back_BLANK.sh','r')
 f2 = open('lo_back_batch.sh','w')
 
-in_varlist = ['EXE_PATH']
+in_varlist = ['EXE_PATH', 'N_NODES']
 
 for line in f:
     for var in in_varlist:
