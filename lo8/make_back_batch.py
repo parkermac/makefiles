@@ -22,7 +22,8 @@ print(EXE_PATH)
 
 NP_NUM = args.np_num
 
-N_NODES = int(NP_NUM /28)
+#N_NODES = int(NP_NUM /28)
+N_NODES = int(NP_NUM /32)
 
 ## create lo_batch.sh - batch job script  ##########################
 
