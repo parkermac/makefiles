@@ -29,8 +29,8 @@
 
 #define BULK_FLUXES
 #define LONGWAVE_OUT
-#define EMINUSP
-#define ATM_PRESS
+#undef EMINUSP
+#undef ATM_PRESS
 
 #undef ANA_NUDGCOEF
 #define ANA_BTFLUX
