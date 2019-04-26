@@ -55,8 +55,8 @@
 #define ADD_FSOBC
 #define ADD_M2OBC
 
-#define BIOLOGY
-#define NPZD2O_BANAS
+#undef BIOLOGY
+#undef NPZD2O_BANAS
 
 #ifdef NPZD2O_BANAS
 #  undef DIAGNOSTICS
