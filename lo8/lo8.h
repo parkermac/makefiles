@@ -29,15 +29,12 @@
 
 #define BULK_FLUXES
 #define LONGWAVE_OUT
-#undef EMINUSP
-#undef ATM_PRESS
 
 #undef ANA_NUDGCOEF
 #define ANA_BTFLUX
 #define ANA_BSFLUX
-#undef ANA_SSFLUX
-#undef ANA_STFLUX
-#undef ANA_RAIN
+#define ANA_SSFLUX
+#define ANA_STFLUX
 
 #define GLS_MIXING
 #if defined GLS_MIXING
