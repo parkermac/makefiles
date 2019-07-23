@@ -64,7 +64,7 @@ ROMS_APPLICATION ?= LO8N
 #  If application header files is not located in "ROMS/Include",
 #  provide an alternate directory FULL PATH.
 
-MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8N
+MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8n
 
 #  If your application requires analytical expressions and they are
 #  not located in "ROMS/Functionals", provide an alternate directory.
