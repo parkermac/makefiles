@@ -16,7 +16,7 @@
 #SBATCH --mem=128G
 
 ## Specify the working directory for this job
-#SBATCH --workdir=/gscratch/macc/parker/LiveOcean_roms/makefiles/$EX_NAME$
+#SBATCH --chdir=/gscratch/macc/parker/LiveOcean_roms/makefiles/$EX_NAME$
 
 module load icc_17-impi_2017
 module load netcdf_fortran+c_4.4.1.1-icc_17
