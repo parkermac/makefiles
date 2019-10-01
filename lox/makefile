@@ -25,7 +25,7 @@
 #                                                                       :::
 #  The USER needs to provide a value for the  macro FORT.  Choose  the  :::
 #  appropriate value from the list below.                               :::
-#                                                                       :::
+#   ..                                                                  :::
 #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ifneq (3.80,$(firstword $(sort $(MAKE_VERSION) 3.80)))

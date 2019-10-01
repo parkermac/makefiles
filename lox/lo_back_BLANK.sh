@@ -15,7 +15,7 @@
 ## Memory per node
 #SBATCH --mem=128G
 
-## Specify the working directory for this job
+## Specify the working directory for this job..
 #SBATCH --chdir=/gscratch/macc/parker/LiveOcean_roms/makefiles/$EX_NAME$
 
 module load icc_17-impi_2017
