@@ -2,7 +2,7 @@
 This creates a batch script for LiveOcean -- using a template version of 
 the batch file replacing things like $whatever$ with actual values and paths.
 -dsd- November 2015
-
+...
 """
 
 # get command line arguments
