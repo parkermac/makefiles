@@ -23,5 +23,5 @@ module load netcdf_fortran+c_4.4.1.1-icc_17
 
 echo $EXE_PATH$
 
-mpirun ./oceanM $EXE_PATH$liveocean.in > $EXE_PATH$log.txt
+mpirun ./oceanS $EXE_PATH$liveocean.in > $EXE_PATH$log.txt
 
