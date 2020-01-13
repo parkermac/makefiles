@@ -52,8 +52,8 @@
 #define ADD_FSOBC
 #define ADD_M2OBC
 
-#define BIOLOGY
-#define NPZD2O_BANAS
+#undef BIOLOGY
+#undef NPZD2O_BANAS
 
 #ifdef NPZD2O_BANAS
 #  undef DIAGNOSTICS
@@ -79,12 +79,12 @@
 #undef NPZD_IRON
 #undef NPZD_POWELL
 
-#undef PERFECT_RESTART
+#define PERFECT_RESTART
 
 #ifdef PERFECT_RESTART
-# undef  AVERAGES
+# define  AVERAGES
 # undef  DIAGNOSTICS_BIO
-# undef  DIAGNOSTICS_TS
-# undef  DIAGNOSTICS_UV
+# define  DIAGNOSTICS_TS
+# define  DIAGNOSTICS_UV
 # define OUT_DOUBLE
 #endif

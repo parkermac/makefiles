@@ -59,12 +59,12 @@ endif
 #  the .h extension. For example, the upwelling application includes the
 #  "upwelling.h" header file.
 
-ROMS_APPLICATION ?= LO8B
+ROMS_APPLICATION ?= LO8DA
 
 #  If application header files is not located in "ROMS/Include",
 #  provide an alternate directory FULL PATH.
 
-MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8b
+MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8da
 
 #  If your application requires analytical expressions and they are
 #  not located in "ROMS/Functionals", provide an alternate directory.
