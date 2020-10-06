@@ -26,6 +26,7 @@
 #define SOLVE3D
 #define MASKING
 #define SPHERICAL
+#define T_PASSIVE
 
 #define BULK_FLUXES
 #define LONGWAVE_OUT
@@ -52,8 +53,8 @@
 #define ADD_FSOBC
 #define ADD_M2OBC
 
-#define BIOLOGY
-#define NPZD2O_BANAS
+#undef BIOLOGY
+#undef NPZD2O_BANAS
 
 #ifdef NPZD2O_BANAS
 #  undef DIAGNOSTICS
