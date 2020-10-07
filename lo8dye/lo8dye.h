@@ -36,6 +36,8 @@
 #define ANA_BSFLUX
 #define ANA_SSFLUX
 #define ANA_STFLUX
+#define ANA_SPFLUX
+#define ANA_BPFLUX
 
 #define GLS_MIXING
 #if defined GLS_MIXING
