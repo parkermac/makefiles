@@ -59,12 +59,12 @@ endif
 #  the .h extension. For example, the upwelling application includes the
 #  "upwelling.h" header file.
 
-ROMS_APPLICATION ?= LO8
+ROMS_APPLICATION ?= LO8K
 
 #  If application header files is not located in "ROMS/Include",
 #  provide an alternate directory FULL PATH.
 
-MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8
+MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8k
 
 #  If your application requires analytical expressions and they are
 #  not located in "ROMS/Functionals", provide an alternate directory.
@@ -149,7 +149,7 @@ MY_CPP_FLAGS ?=
 #  a unique, new, name, instead of just recycling Linux-ifort.mk.
 #--------------------------------------------------------------------------
 
-        FORTM ?= ifort_mox
+        FORTM ?= ifort_klone
 
 #--------------------------------------------------------------------------
 #  Set directory for executable.
