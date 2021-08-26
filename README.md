@@ -1,6 +1,6 @@
 # README for makefiles
 
-### Each folder contains the files used to compile ROMS for one of our machines, e.g. mox and klone.
+### Each folder contains the files used to compile ROMS for one of our machines, e.g. mox and klone. The folder is also where oceanM, the executable, ends up after compiling.
 
 ---
 
@@ -8,7 +8,7 @@
 This is the first one for compiling on klone.
 - It is similar to lo8 (mox) in that it is for LO_ROMS but with the bio flags turned off.
 - It also is the first use of NetCDF4 in ROMS.
-- This is also the first instance (I think) where we moved all the sbatch file code to LO/dot_in/shared.
+- This is also among the first instances where we moved all the sbatch file code to LO/dot_in/shared.
 
 ---
 
