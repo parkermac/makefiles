@@ -5,7 +5,27 @@
 ---
 
 #### lo8k
-This is the first one for compiling on klone.  It is similar to lo8 (mox) in that it is for LO_ROMS but with the bio flags turned off. It also is the first use of NetCDF4 in ROMS.
+This is the first one for compiling on klone.
+- It is similar to lo8 (mox) in that it is for LO_ROMS but with the bio flags turned off.
+- It also is the first use of NetCDF4 in ROMS.
+- This is also the first instance (I think) where we moved all the sbatch file code to LO/dot_in/shared.
+
+---
 
 #### lo8kb
 Like lo8k but with the bio flags turned on.
+
+Note: to make a new instance you just copy the .h and makefile from the an old folder to a new one (lo8k to lo8kb in this case).
+
+Then rename the .h, in this case to lo8kb.h.
+
+Then make these few edits in the .h:
+```
+#define BIOLOGY
+#define NPZD2O_BANAS
+```
+And make these slight name changes in two lines of makefile:
+```
+ROMS_APPLICATION ?= LO8KB
+MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8kb
+```
