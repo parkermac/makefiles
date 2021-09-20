@@ -29,3 +29,17 @@ And make these slight name changes in two lines of makefile:
 ROMS_APPLICATION ?= LO8KB
 MY_HEADER_DIR ?= /gscratch/macc/parker/LiveOcean_roms/makefiles/lo8kb
 ```
+
+---
+
+#### n0k
+For a nested run on klone.  This is based on lo8k but with no tides.  To remove the tidal forcing we undefine these flags in the .h:
+
+```
+#undef SSH_TIDES
+#undef UV_TIDES
+#undef ADD_FSOBC
+#undef ADD_M2OBC
+```
+
+---
