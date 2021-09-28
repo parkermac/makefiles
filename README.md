@@ -41,5 +41,9 @@ For a nested run on klone.  This is based on lo8k but with no tides.  To remove 
 #undef ADD_FSOBC
 #undef ADD_M2OBC
 ```
-
+and I am trying these (2021.09.28):
+```
+#define DEFLATE
+#define HDF5
+```
 ---

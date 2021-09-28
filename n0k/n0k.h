@@ -88,3 +88,7 @@
 # undef  DIAGNOSTICS_UV
 # define OUT_DOUBLE
 #endif
+
+#define DEFLATE
+#define HDF5
+
