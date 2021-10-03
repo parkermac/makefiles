@@ -47,3 +47,13 @@ and I am trying these (2021.09.28):
 #define HDF5
 ```
 ---
+
+#### u0mb
+Just like the lo8b that is running the current forecast, but with NetCDF4 and compressed output.  Also uses the cleaner treatment of the batch files that I developed above.
+
+Note that the makefile for this only differs from one I would use on klone by a single line: around 152 which has:
+```
+FORTM ?= ifort_mox
+```
+
+---
