@@ -57,3 +57,10 @@ FORTM ?= ifort_mox
 ```
 
 ---
+
+#### u0kb
+Just like u0mb but for klone, so the .h files are identical except for the name, and the makefiles are similar except for the names and the FORTM line.
+
+The is meant to run the current forecast, but on klone, and with compressed NetCDF4 output.
+
+---
