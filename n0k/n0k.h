@@ -26,6 +26,7 @@
 #define SOLVE3D
 #define MASKING
 #define SPHERICAL
+#define WET_DRY
 
 #define BULK_FLUXES
 #define LONGWAVE_OUT
